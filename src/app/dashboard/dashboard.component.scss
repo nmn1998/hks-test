@@ -1,0 +1,130 @@
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.navbar {
+  .navContent {
+    .taskQue {
+      font-size: 12px;
+      font-weight: 400;
+      padding-top: 15px;
+      opacity: 0.5;
+    }
+  }
+}
+.containerSection ::-webkit-scrollbar {
+  display: none;
+}
+
+.containerSection {
+  padding: 1rem;
+  .container {
+    display: flex;
+    gap: 10px;
+    .sidebar {
+      .sidebarHeader {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+      }
+      .sidebarContainer {
+        .notification {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid #2ea9f4;
+          .notiText {
+            font-size: 24px;
+            font-weight: 500;
+            color: #2ea9f4;
+          }
+        }
+        .notificationContent {
+          border-bottom: 2px solid #f5f5f5;
+          margin-bottom: 1rem;
+          .notiData {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            .notiText {
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+        }
+        .home {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          margin-bottom: 1rem;
+          .homeText {
+            font-size: 24px;
+            font-weight: 500;
+            color: #676768;
+            cursor: pointer;
+          }
+        }
+        .production {
+          margin-bottom: 1rem;
+          .prodData {
+            display: flex;
+            margin-bottom: 1rem;
+            gap: 2rem;
+            align-items: center;
+            border-bottom: 1px solid #2ea9f4;
+            .prodText {
+              font-size: 24px;
+              font-weight: 500;
+              color: #2ea9f4;
+              cursor: pointer;
+            }
+          }
+          .prodProcess {
+            padding-left: 2.6rem;
+            color: #2ea9f4;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            &:last-child {
+              color: #676768;
+            }
+            &:nth-last-child(2) {
+              color: #6c8e9d;
+            }
+          }
+        }
+        .more {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          padding-top: 5px;
+          border-top: 2px solid #f5f5f5;
+          .moreText {
+            font-size: 24px;
+            font-weight: 500;
+            color: #676768;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tasks {
+  font-size: 24px;
+  font-weight: 500;
+  color: #2ea9f4;
+}
+.commonClass {
+  width: 100%;
+  text-align: center;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid #2ea9f4;
+}
